@@ -72,3 +72,14 @@ header{
     background-color: #e68900;
 }
 /*fim estilização link dropdown*/
+
+.rodape{
+    background-color: rgb(194, 252, 233);
+    width: 100%;
+    height: 250px;
+}
+
+.col-lg li{
+    list-style-type: none;
+}
+
