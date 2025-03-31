@@ -83,3 +83,17 @@ header{
     list-style-type: none;
 }
 
+.img-fluid{
+    margin-top: 8.2%;
+    width: 100%;
+    opacity: 60%;
+}
+
+.texto_mercearia{
+    position: absolute;
+    margin-top: -5.8%;
+    justify-content: center;
+    margin-left: 32rem;
+    text-transform: uppercase;
+}
+
