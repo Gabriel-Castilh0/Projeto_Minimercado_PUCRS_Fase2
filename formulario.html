@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!--link para o .CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--links para o funcionamento do bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Serviços</title>
+</head>
+
+<body>
+    <!--Sessão do menu-->
+    <section class="cabecalho">
+        <header>
+            <nav class="menu">
+                <ul class="links_menu">
+                    <li><a href="index.html" tabindex=“0” alt="link para a pagina inicial">Página Inicial</a></li>
+                    <!--Link para voltar para a página inicial-->
+                    <li><a href="servicos_minimercado.html" tabindex=“0 alt="link para a pagina serviços">Serviços</a></li>
+                    <!--Link para a página de serviços-->
+                    <li><a href="#rodape" tabindex=“0” alt="link para a pagina contatos">Contatos</a></li>
+                    <!--Criar um link que leve diretamente ao rodapé da página-->
+                    <li><!--dropdown de setores-->
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex=“0” alt="botão para abrir links dos setores">
+                                Setores
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="mercearia_minimercado.html" tabindex="0" alt="link para a pagina merceria">Mercearia</a>
+                                <a class="dropdown-item" href="padaria_minimercado.html" tabindex="0" alt="link para a pagina padaria">Padaria</a>
+                                <a class="dropdown-item" href="acougue_minimercado.html" tabindex="0" alt="link para a pagina açougue">Açougue</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!--sessão do formulário-->
+    <section id="formulario">
+        <form action="https://formsubmit.co/g.santoscastilho@outlook.com" method="post">
+            <fieldset class="campos-formulario">
+                <legend tabindex="0" alt="Informações do cliente">Informações do Cliente</legend>
+                <label tabindex="0" alt="nome">Nome</label>
+                <input type="text" name="Nome" pattern="[A-Za-z]{5,40}" placeholder="Digite seu nome completo" required autofocus>
+                <label tabindex="0" alt="cpf">CPF</label>
+                <input type="text" name="CPF" pattern="[0-9]{11}" placeholder="Digite seu CPF" required autofocus>
+                <br><br>
+                <label tabindex="0" alt="endereço">Endereço</label>
+                <input type="text" name="endereco" pattern="[A-Za-z]{5,40}" placeholder="Seu endereço" required autofocus>
+                <label tabindex="0" alt="numero do endereço">Numero</label>
+                <input type="text" name="Numero_casa" pattern="[0-9]{10}" placeholder="Número do seu endereço" required autofocus>
+                <label tabindex="0"alt="complemento opcional">Complemento (Opcional)</label>
+                <input type="text" name="Complemento" pattern="[0-9A-Za-z]{15}" placeholder="Bloco/apartamento">
+                <br><br>
+                <label tabindex="0"alt="número para contato com dd e nove digitos">Número para contato</label>
+                <input type="tel" name="fone" pattern="[0-9]{11}" placeholder="ddxxxxxxxxxx" required autofocus>
+                <label tabindex="0"alt="segundo número para contato com dd e nove digitos opcional">Segundo número para contato (Opcional)</label>
+                <input type="tel" name="fone" pattern="[0-9]{11}" placeholder="ddxxxxxxxxxx">
+                <label tabindex="0"alt="endereço de email">Endereço de e-mail</label>
+                <input type="email" name="email" placeholder="Digite seu email" required autofocus>
+            </fieldset>
+
+            <fieldset>
+                <legend abindex="0"alt="informações sobre o serviço solicitado">Informações Sobre o Serviço Solicitado</legend>
+                <label abindex="0"alt="escolha o tipo de serviço">Qual o serviço desejado</label>
+                <select name="tipo_servico" required autofocus>
+                    <option value="" data-default disabled selected></option>
+                    <option value="Bolos" tabindex="0"alt="bolos">Bolos</option>
+                    <option value="Salgados-festa" tabindex="0"alt="salgados de festas">Salgados de Festa</option>
+                    <option value="ambos" tabindex="0"alt="ambos">Ambos</option>
+                </select>
+                <br><br>
+                <label style="color: red;" tabindex="0" alt="preencha de acordo com o serviço solicitado">Preencha de acordo com o serviço solicitado*</label>
+                <h1 class="titulo-servicos" tabindex="0" alt="trecho para bolos">Bolos</h1>
+                <label tabindex="0" alt="bolo é zero lactose?">Bolo zero lactose?</label>
+                <div>
+                    <label tabindex="0" alt="sim">SIM</label>
+                    <input type="radio" value="SIM" name="intolerante-lactose">
+                    <label tabindex="0" alt="não">NÂO</label>
+                    <input type="radio" value="NAO" name="intolerante-lactose">
+                </div>
+                <br>
+                <label tabindex="0" alt="informe o recheio">Informe o recheio</label>
+                <select name="recheio">
+                    <option value="" data-default disabled selected></option>
+                    <option value="Chocolate" tabindex="0" alt="chocolate">Chocolate</option>
+                    <option value="Morango" tabindex="0" alt="morango">Morango</option>
+                    <option value="Baunilha" tabindex="0" alt="baunilha">Baunilha</option>
+                    <option value="Fruttas-vermelhas" tabindex="0" alt="frutas vermelhas">Frutas Vermelhas</option>
+                </select>
+                <label tabindex="0" alt="observações opcionais">Observações (opcional)</label>
+                <input type="text" name="obsrvações-cobertura" pattern="A-Za-z">
+                <br><br>
+                <label tabindex="0" alt="informe a cobertura">Informe a cobertura</label>
+                <select name="cobertura-bolo">
+                    <option value="" data-default disabled selected></option>
+                    <option value="merengue" tabindex="0" alt="merengue">Merengue</option>
+                    <option value="glace" tabindex="0" alt="glacê">Glacê</option>
+                    <option value="Chocolate" tabindex="0" alt="chocolate">Chocolate</option>
+                    <option value="Morango" tabindex="0" alt="morango">Morango</option>
+                </select>
+                <label tabindex="0" alt="observações opcionais">Observações (opcional)</label>
+                <input type="text" name="obsrvações-cobertura" pattern="A-Za-z">
+                <br><br>
+                <div>
+                    <label>Informe o número de fatias</label>
+                    <label tabindex="0" alt="o valor da fatia é 3 reais">O valor da fatia é: R$3,00</label><br>
+                    <label tabindex="0" alt="quantas fatias deseja. Pode escolher entre 30, 40 ou 50 fatias">Quantas fatias deseja (30, 40 ou 50):</label>
+                    <input type="number" id="qtdFatias" name="qtdFatias"><br>
+                    <p>Valor total do bolo: R$ <output id="totalOrcamentoBolo" name="totalOrcamentoBolo">0,00</output>
+                    </p>
+                </div>
+                <script>
+                    let qtdFatiasInput = document.getElementById('qtdFatias');
+                    let totalOutput = document.getElementById('totalOrcamentoBolo');
+                    qtdFatiasInput.addEventListener('input', () => {
+                        let valorFatia = 3;
+                        let qtd = parseInt(qtdFatiasInput.value) || 0;
+                        let total = qtd * valorFatia;
+                        totalOutput.textContent = total.toFixed(2).replace('.', ',');
+                    });
+                </script>
+                <h1 tabindex="0" alt="trecho para salgados">Salgados</h1>
+                <label tabindex="0" alt="salgados são zero lactose?">Salgados zero lactose?</label>
+                <div>
+                    <label tabindex="0" alt="sim">SIM</label>
+                    <input type="radio" value="SIM" name="intolerante-lactose">
+                    <label tabindex="0" alt="não">NÂO</label>
+                    <input type="radio" value="NAO" name="intolerante-lactose">
+                </div>
+                <div>
+                    <label tabindex="0" alt="escolha a variedade de salgados">Escolha a variedade dos salgados</label>
+                    <select name="tipo-salgado" required autofocus>
+                        <option value="" data-default disabled selected></option>
+                        <option value="frito" tabindex="0" alt="frito">Frito</option>
+                        <option value="assado" tabindex="0" alt="assado">Assado</option>
+                        <option value="misto" tabindex="0" alt="misto">Misto</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <p tabindex="0" alt="o cento de salgados frito e cem reais"><b>Fritos:</b> R$100 o cento de salgados</p>
+                    <label tabindex="0" alt="bolinhas de queijo minimo 25 unidades">Bolinhas de queijo (pedido min. 25un)</label>
+                    <input type="number" id="bolinhasQueijo" name="bolinhasQueijo" min="25" max="1000" step="25">
+                    <label tabindex="0" alt="pastelzinho minimo 25 unidades">Pastelzinho (pedido min. 25un)</label>
+                    <input type="number" id="pastelzinho" name="pastelzinho" min="25" step="25">
+                    <label tabindex="0" alt="mini kibi minimo 25 unidades">Mini Kibi (pedido min. 25un)</label>
+                    <input type="number" id="miniKibi" name="miniKibi" min="25" step="25">
+                    <p>Valor total dos salgados fritos: R$<output id="totalFritos" name="totalFritos">0,00</output></p>
+                  
+                    <p tabindex="0" alt="o cento de salgados frito e cem reais"><b>Assados:</b> R$80 o cento do salgado</p>
+                    <label tabindex="0" alt="cachorrinho minimo 25 unidades">Cachorrinho (pedido min. 25un)</label>
+                    <input type="number" id="cachorrinho" name="cachorrinho" min="25" step="25">
+                    <label tabindex="0" alt="mini pizza minimo 25 unidades">Mini pizza (pedido min. 25un)</label>
+                    <input type="number" id="mini Pizza" name="miniPizza" min="25" step="25">
+                    <label tabindex="0" alt="mini esfirra minimo 25 unidades">Mini esfirra (pedido min. 25un)</label>
+                    <input type="number" id="miniEsfirra" name="miniEsfirra" min="25" step="25">
+                    <p>Valor total dos salgados assados: R$<output id="totalAssados" name="totalAssados">0,00</output></p>
+                  
+                    <h1>Valor Total do Orçamento: R$ <output id="totalOrcamento" name="totalOrcamento">0,00</output></h1>
+                </div>
+                <script>
+                    let campos = [
+                      'bolinhasQueijo', 'pastelzinho', 'miniKibi',
+                      'cachorrinho', 'miniPizza', 'miniEsfirra', 'qtdFatias'
+                    ];
+                  
+                    let unidadeDoFrito = 1.00;
+                    let unidadeDoAssado = 0.80;
+                  
+                    let totalFritosOutput = document.getElementById('totalFritos');
+                    let totalAssadosOutput = document.getElementById('totalAssados');
+                    let totalOrcamentoOutput = document.getElementById('totalOrcamento');
+                  
+                    function calcularOrcamento() {
+                        let qtdFatias = parseInt(document.getElementById('qtdFatias').value) || 0;
+                        let valorFatia = 3;
+                        let totalBolo = qtdFatias * valorFatia;
+
+                        document.getElementById('totalOrcamentoBolo').textContent = totalBolo.toFixed(2).replace('.', ',');
+
+                        let bolinhas = parseInt(document.getElementById('bolinhasQueijo').value) || 0;
+                        let pastel = parseInt(document.getElementById('pastelzinho').value) || 0;
+                        let kibi = parseInt(document.getElementById('miniKibi').value) || 0;
+                    
+                        let cachorrinho = parseInt(document.getElementById('cachorrinho').value) || 0;
+                        let pizza = parseInt(document.getElementById('miniPizza').value) || 0;
+                        let esfirra = parseInt(document.getElementById('miniEsfirra').value) || 0;
+                    
+                        let totalFritos = (bolinhas + pastel + kibi) * unidadeDoFrito;
+                        let totalAssados = (cachorrinho + pizza + esfirra) * unidadeDoAssado;
+                        let total = totalFritos + totalAssados;
+                    
+                        totalFritosOutput.textContent = totalFritos.toFixed(2).replace('.', ',');
+                        totalAssadosOutput.textContent = totalAssados.toFixed(2).replace('.', ',');
+                        totalOrcamentoOutput.textContent = total.toFixed(2).replace('.', ',');
+                    }
+                  
+                        campos.forEach(id => {
+                        document.getElementById(id).addEventListener('input', calcularOrcamento);
+                    });
+                </script>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label tabindex="0" alt="escolha a opção de entrega">Escolha a opção de entrega: </label>
+                    <div>
+                    <label tabindex="0" alt="para entregar">Entrega</label>
+                    <input type="radio" value="entrega" name="opcoes-entrega">
+                    <label tabindex="0" alt="para retirar">Retirada</label>
+                    <input type="radio" value="retirada" name="opcoes-entrega">        
+                    </div>
+                <br><br>
+                <label>Escolhe uma data e horário:</label>
+                <input type="datetime-local" name="agenda" min="2025-04-13" max="2025-12-31">
+            </fieldset>
+            <label tabindex="0" alt="botão para enviar orçamento">Enviar Orçamento</label>
+            <input class="botao_enviar" type="submit">
+            <br>
+            <br>
+        </form>
+    </section>
+
+    <!--Sessão do rodpaé da página-->
+    <section class="rodape-container">
+        <footer class="rodape">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="Contatos_footer">
+                            <h2 tabindex="0" alt="trecho da página dedicado aos contatos">Contatos</h2>
+                            <p tabindex="0" alt="email"><b>Email</b></p>
+                            <p tabindex="0" alt="atendimento.online@pucrs.br">atendimento.online@pucrs.br</p>
+                            <p tabindex="0" alt="número para atendimento"><b>Atendimento</b></p>
+                            <p tabindex="0" alt="51933007000">(51) 933007000</p>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="endereço">
+                            <h4 tabindex="0">Minimercado PUCRS</h4>
+                            <p5 tabindex="0" alt="endereço do mercaco Avenida Ipiranga número 6681 bairro Partenon Porto Alegre">Av. Ipiranga, 6681 - Partenon, Porto Alegre</p5>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="links_Contatos_footer">
+                            <h2 tabindex="0" alt="links para as midias sociais">Links</h2>
+                            <ul>
+                                <li tabindex="0" alt="para o instagram é www.instagram.com/pucrs/"><a href="https://www.instagram.com/pucrs/">Instagram</a></li>
+                                <li tabindex="0" alt="para o WhatsApp é wa.me/5551933007000"><a href="https://wa.me/5551933007000">WhatsApp</a></li>
+                                <li tabindex="0" alt="para o email é atendimento.online@pucrs.br"><a href="malito:atendimento.online@pucrs.br">E-mail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

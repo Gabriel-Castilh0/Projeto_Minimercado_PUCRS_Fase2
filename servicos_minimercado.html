@@ -18,92 +18,99 @@
 </head>
 
 <body>
-    <!-- inicio seção do menu-->
+    <!--Sessão do menu-->
     <section class="cabecalho">
         <header>
             <nav class="menu">
                 <ul class="links_menu">
-                    <li><a href="index.html">Página Inicial</a></li><!--Link para voltar para a página inicial-->
-                    <li><a href="servicos_minimercado.html">Serviços</a></li><!--Link para a página de serviços-->
-                    <li><a href="#rodape">Contatos</a></li><!--Criar um link que leve diretamente ao rodapé da página-->
+                    <li><a href="index.html" tabindex=“0” alt="link para a pagina inicial">Página Inicial</a></li>
+                    <!--Link para voltar para a página inicial-->
+                    <li><a href="servicos_minimercado.html" tabindex=“0 alt="link para a pagina serviços">Serviços</a></li>
+                    <!--Link para a página de serviços-->
+                    <li><a href="#rodape" tabindex=“0” alt="link para a pagina contatos">Contatos</a></li>
+                    <!--Criar um link que leve diretamente ao rodapé da página-->
                     <li><!--dropdown de setores-->
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Setores
-                        </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="mercearia_minimercado.html">Mercearia</a>
-                          <a class="dropdown-item" href="padaria_minimercado.html">Padaria</a>
-                          <a class="dropdown-item" href="acougue_minimercado.html">Açougue</a>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex=“0” alt="botão para abrir links dos setores">
+                                Setores
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="mercearia_minimercado.html" tabindex="0" alt="link para a pagina merceria">Mercearia</a>
+                                <a class="dropdown-item" href="padaria_minimercado.html" tabindex="0" alt="link para a pagina padaria">Padaria</a>
+                                <a class="dropdown-item" href="acougue_minimercado.html" tabindex="0" alt="link para a pagina açougue">Açougue</a>
+                            </div>
                         </div>
-                    </div>
                     </li>
                 </ul>
             </nav>
         </header>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
     <!--sessão que irá delimitar visualmente em qual setor o cliente está-->
-    <div>
-        <h1>SERVIÇOS</h1>
-        <br>
-    </div>
-    <!--Banners que irão ilustrar os serviços prestados-->
-    <div id="servico_bolo">
-        <h3>DESCRIÇÃO</h3>
-        <p>Bolos para festas e aniversários nos sabores chocolate, morango e baunilha</p>
-        <p>Valor por kg: R$30</p>
-        <img src="img/servicos/img_bolo_servicos.jfif" width="980" height="250">
-
-    </div>
-
-    <div>
-        <h3>DESCRIÇÃO</h3>
-        <p>Cento de salgados: pastelzinho, mini esfirra, totosinho e bolinhas de queijo</p>
-        <p>Valor do cento: R$75</p>
-        <img src="img/servicos/img_salgados_servicos.jfif" width="980" height="250">
-    </div>
-    <!--Sessão do rodapaé da página-->
-    <section id="rodape">
-        <footer class="rodape">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg">
-                        <div class="Contatos_footer">
-                            <h2>Contatos</h2>
-                            <p><b>Email</b></p>
-                            <p>atendimento.online@pucrs.br</p>
-                            <p><b>Atendimento</b></p>
-                            <p>(51) 933007000</p>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="endereço">
-                            <h4>Minimercado PUCRS</h4>
-                            <p5>Av. Ipiranga, 6681 - Partenon, Porto Alegre</p5>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="links_Contatos_footer">
-                            <h2>Links</h2>
-                            <ul>
-                                <li><a href="https://www.instagram.com/pucrs/">Instagram</a></li>
-                                <li><a href="https://wa.me/5551933007000">WhatsApp</a></li>
-                                <li><a href="malito:atendimento.online@pucrs.br">E-mail</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <section class="servico-bloco">
+        <div class="servico-conteudo">
+          <div class="servico-img">
+            <img src="img/servicos/img_bolo_servicos.jfif" alt="Bolo decorado" width="400" height="400">
+          </div>
+          <div class="servico-descricao">
+            <h2 alt="Bolos Personalizados">Bolos Personalizados</h2>
+            <p alt="Deliciosos bolos feitos sob encomenda, com recheios variados e coberturas especiais.
+            Ideal para festas, aniversários e eventos especiais.">
+              Deliciosos bolos feitos sob encomenda, com recheios variados e coberturas especiais.
+              Ideal para festas, aniversários e eventos especiais.
+            </p>
+            <a href="formulario.html" class="btn-servico" tabindex="0" alt="botão para solicitar orçamento">Solicitar Orçamento</a>
+          </div>
+        </div>
+        <div class="servico-conteudo">
+            <div class="servico-img">
+              <img src="img/servicos/img_salgados_servicos.jfif" width="400" height="400" alt="Imagem de salgados variados">
             </div>
-        </footer>
+            <div class="servico-descricao">
+              <h2 alt="Salgados de Festa">Salgados de Festa</h2>
+              <p alt="Temos uma variedade deliciosa de salgados fritos e assados. Ideais para festas, confraternizações e eventos.">Temos uma variedade deliciosa de salgados fritos e assados. Ideais para festas, confraternizações e eventos.</p>
+              <a href="formulario.html" class="btn-servico" tabindex="0" alt="botão para solicitar orçamento">Solicitar Orçamento</a>
+            </div>
+        </div>
+
+    </section>
+
+      <!--Sessão do rodpaé da página-->
+    <section class="rodape-container">
+          <footer class="rodape">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg">
+                          <div class="Contatos_footer">
+                              <h2 tabindex="0" alt="trecho da página dedicado aos contatos">Contatos</h2>
+                              <p tabindex="0" alt="email"><b>Email</b></p>
+                              <p tabindex="0" alt="atendimento.online@pucrs.br">atendimento.online@pucrs.br</p>
+                              <p tabindex="0" alt="número para atendimento"><b>Atendimento</b></p>
+                              <p tabindex="0" alt="51933007000">(51) 933007000</p>
+                          </div>
+                      </div>
+                      <div class="col-lg">
+                          <div class="endereço">
+                              <h4 tabindex="0">Minimercado PUCRS</h4>
+                              <p5 tabindex="0" alt="endereço do mercaco Avenida Ipiranga número 6681 bairro Partenon Porto Alegre">Av. Ipiranga, 6681 - Partenon, Porto Alegre</p5>
+                          </div>
+                      </div>
+                      <div class="col-lg">
+                          <div class="links_Contatos_footer">
+                              <h2 tabindex="0" alt="links para as midias sociais">Links</h2>
+                              <ul>
+                                  <li tabindex="0" alt="para o instagram é www.instagram.com/pucrs/"><a href="https://www.instagram.com/pucrs/">Instagram</a></li>
+                                  <li tabindex="0" alt="para o WhatsApp é wa.me/5551933007000"><a href="https://wa.me/5551933007000">WhatsApp</a></li>
+                                  <li tabindex="0" alt="para o email é atendimento.online@pucrs.br"><a href="malito:atendimento.online@pucrs.br">E-mail</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </footer>
     </section>
 </body>
+
 </html>

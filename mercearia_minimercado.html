@@ -8,9 +8,15 @@
     <!--links para o funcionamento do bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,96 +24,108 @@
 </head>
 
 <body>
-    <!-- inicio seção do menu-->
+    <!--Sessão do menu-->
     <section class="cabecalho">
         <header>
             <nav class="menu">
                 <ul class="links_menu">
-                    <li><a href="index.html">Página Inicial</a></li><!--Link para voltar para a página inicial-->
-                    <li><a href="servicos_minimercado.html">Serviços</a></li><!--Link para a página de serviços-->
-                    <li><a href="#rodape">Contatos</a></li><!--Criar um link que leve diretamente ao rodapé da página-->
+                    <li><a href="index.html" tabindex=“0” alt="link para a pagina inicial">Página Inicial</a></li>
+                    <!--Link para voltar para a página inicial-->
+                    <li><a href="servicos_minimercado.html" tabindex=“0 alt="link para a pagina serviços">Serviços</a></li>
+                    <!--Link para a página de serviços-->
+                    <li><a href="#rodape" tabindex=“0” alt="link para a pagina contatos">Contatos</a></li>
+                    <!--Criar um link que leve diretamente ao rodapé da página-->
                     <li><!--dropdown de setores-->
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Setores
-                        </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="mercearia_minimercado.html">Mercearia</a>
-                          <a class="dropdown-item" href="padaria_minimercado.html">Padaria</a>
-                          <a class="dropdown-item" href="acougue_minimercado.html">Açougue</a>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex=“0” alt="botão para abrir links dos setores">
+                                Setores
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="mercearia_minimercado.html" tabindex="0" alt="link para a pagina merceria">Mercearia</a>
+                                <a class="dropdown-item" href="padaria_minimercado.html" tabindex="0" alt="link para a pagina padaria">Padaria</a>
+                                <a class="dropdown-item" href="acougue_minimercado.html" tabindex="0" alt="link para a pagina açougue">Açougue</a>
+                            </div>
                         </div>
-                    </div>
                     </li>
                 </ul>
             </nav>
-            
         </header>
     </section>
-    <!--sessão que irá delimitar visualmente em qual setor o cliente está-->
-    <section>
-        <div class="container_img_1">
-            <div class="setor_mercearia">
-                <img src="img/mercearia/nome_mercearia2.jpg" class="img-fluid" alt="Imagem responsiva">
-                
-            </div>
-           
-                <div class="texto_mercearia">
-                    <h1>mercearia</h1>
-                </div>
-            
-        </div>
+
+    <!--ínicio sessão dos produtos-->
+    <section id="produtos">
+        <section class="produto">
+            <img src="img/mercearia/produto_1.jpg"width="256px" height="256px" tabindex="0" alt="Feijão Preto Kicaldo 7,49">
+            <p>Feijão Preto Kicaldo</p>
+            <p><b>R$ 7,49</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto_2.jpg"width="256px" height="256px" tabindex="0" alt="Arroz Branco Camil 5,99">
+            <p>Arroz Branco Camil</p>
+            <p><b>R$ 5,99</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto_3.jpg"width="256px" height="256px" tabindex="0" alt="Óleo Concórdia Pet 900ml 6,49">
+            <p>Óleo Concórdia Pet 900ml</p>
+            <p><b>R$ 6,49</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto_4.jpg"width="256px" height="256px" tabindex="0" alt="Molho de Tomate Pomarola 2,99">
+            <p>Molho de Tomate Pomarola</p>
+            <p><b>R$ 2,99</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto_5.jpg"width="256px" height="256px" tabindex="0" alt="Leite Condensado Piracanjuba 3,99">
+            <p>Leite Condensado Piracanjuba</p>
+            <p><b>R$ 3,99</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto_6.jpg"width="256px" height="256px" tabindex="0" alt="Sagu Kisabo 4,49">
+            <p>Sagu Kisabor</p>
+            <p><b>R$ 4,49</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto-7.jpg"width="256px" height="256px" tabindex="0" alt="Maccarão Isabela 3,49">
+            <p>Maccarão Isabela</p>
+            <p><b>R$ 3,49</b></p>
+        </section>
+        <section class="produto">
+            <img src="img/mercearia/produto-8.jpg"width="256px" height="256px" tabindex="0" alt="Azeite Extra Vrigem Gallo 15,49">
+            <p>Azeite Extra Vrigem Gallo</p>
+            <p><b>R$ 15,49</b></p>
+        </section>
     </section>
-    <br> 
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--Sessão que irá mostra os produtos da categoria. Obs.: A ideia é ter 6 produtos em cada página setorial, mas achei melhor esperar o momento da estilização pra isso-->
-    <section id="produtos_mercearia">
-        <div id="feijao">
-            <img src="img/mercearia/feijao.jpg" width="200" height="100">
-            <p>FEIJÃO R$7,49kg</p>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--Sessão do rodapaé da página-->
-    <section id="rodape">
+    <!--final sessão dos produtos-->
+
+    <!--Sessão do rodpaé da página-->
+    <section class="rodape-container">
         <footer class="rodape">
             <div class="container">
                 <div class="row">
                     <div class="col-lg">
                         <div class="Contatos_footer">
-                            <h2>Contatos</h2>
-                            <p><b>Email</b></p>
-                            <p>atendimento.online@pucrs.br</p>
-                            <p><b>Atendimento</b></p>
-                            <p>(51) 933007000</p>
+                            <h2 tabindex="0" alt="trecho da página dedicado aos contatos">Contatos</h2>
+                            <p tabindex="0" alt="email"><b>Email</b></p>
+                            <p tabindex="0" alt="atendimento.online@pucrs.br">atendimento.online@pucrs.br</p>
+                            <p tabindex="0" alt="número para atendimento"><b>Atendimento</b></p>
+                            <p tabindex="0" alt="51933007000">(51) 933007000</p>
                         </div>
                     </div>
                     <div class="col-lg">
                         <div class="endereço">
-                            <h4>Minimercado PUCRS</h4>
-                            <p5>Av. Ipiranga, 6681 - Partenon, Porto Alegre</p5>
+                            <h4 tabindex="0">Minimercado PUCRS</h4>
+                            <p5 tabindex="0" alt="endereço do mercaco Avenida Ipiranga número 6681 bairro Partenon Porto Alegre">Av. Ipiranga, 6681 - Partenon, Porto Alegre</p5>
                         </div>
                     </div>
                     <div class="col-lg">
                         <div class="links_Contatos_footer">
-                            <h2>Links</h2>
+                            <h2 tabindex="0" alt="links para as midias sociais">Links</h2>
                             <ul>
-                                <li><a href="https://www.instagram.com/pucrs/">Instagram</a></li>
-                                <li><a href="https://wa.me/5551933007000">WhatsApp</a></li>
-                                <li><a href="malito:atendimento.online@pucrs.br">E-mail</a></li>
+                                <li tabindex="0" alt="para o instagram é www.instagram.com/pucrs/"><a href="https://www.instagram.com/pucrs/">Instagram</a></li>
+                                <li tabindex="0" alt="para o WhatsApp é wa.me/5551933007000"><a href="https://wa.me/5551933007000">WhatsApp</a></li>
+                                <li tabindex="0" alt="para o email é atendimento.online@pucrs.br"><a href="malito:atendimento.online@pucrs.br">E-mail</a></li>
                             </ul>
                         </div>
                     </div>
